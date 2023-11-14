@@ -1,0 +1,26 @@
+# Variables that will be used
+Total Months = 0
+Total Rainfall = 0
+
+# User enters number of years
+years = input
+
+# Loop through each year
+for year in range(1, years + 1):
+    # Loop through each month
+    for month in range(1, 13):
+        # User enters rainfall in inches for that month
+        Rainfall = input
+        # Add the rainfall to the total
+        Total Rainfall += Rainfall
+        # Increment the number of months
+        Total Months += 1
+
+# Calculate the average rainfall per month
+Average Rainfall = Total Rainfall / Total Months
+
+# Display the results
+print "The number of months is {Total Months}"
+print "The total inches of rainfall is {Total Rainfall}"
+print "The average rainfall per month is {Average Rainfall}"
+

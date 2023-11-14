@@ -1,0 +1,32 @@
+# Variables that will be used
+Books = 0
+Points = 0
+
+# Do while loop
+while True:
+    # User enters the number of books
+    Books = input
+
+    # Check if the input is positive
+    if Books > 0:
+        # Check the number of books and assign the corresponding points
+        if Books // 2 == 0:
+            Points = 0
+        else if Books // 2 == 1:
+            Points = 5
+        else if Books // 2 == 2:
+            Points = 15
+        else if Books // 2 == 3:
+            Points = 30
+        else if Books // 2 >= 4:
+            Points = 60
+
+        # Display the number of points awarded
+        print "You have earned {Points} points."
+    else:
+        # If the input is not positive, display an error message and continue the loop
+        print "Invalid number of books. Please enter a positive number."
+        continue
+
+    # Break out of the loop when the number of books is valid
+    break
